@@ -1,0 +1,394 @@
+
+
+:root {
+  --background: #170e19;
+  --panel: #241725;
+  --gold: #e7c58b;
+  --cream: #fff4e4;
+  --muted: #b8a7b6;
+  --border: rgba(231, 197, 139, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 50% 0%, #482842 0%, transparent 48%),
+    var(--background);
+  color: var(--cream);
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+}
+
+.hero {
+  min-height: 100vh;
+  padding: 30px 20px 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-label,
+.eyebrow,
+.section-label {
+  color: var(--gold);
+  font-size: 10px;
+  letter-spacing: 4px;
+  line-height: 1.8;
+}
+
+.sparkle {
+  color: var(--gold);
+  font-size: 34px;
+  margin-top: 35px;
+}
+
+h1,
+h2,
+h3,
+.signature,
+.photo-card figcaption {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: clamp(68px, 13vw, 125px);
+  line-height: 0.95;
+  margin: 18px 0;
+  color: var(--gold);
+}
+
+h1 span {
+  color: var(--cream);
+}
+
+.subtitle {
+  max-width: 460px;
+  color: var(--muted);
+  line-height: 1.9;
+  font-size: 14px;
+}
+
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  width: min(100%, 540px);
+  margin: 22px auto;
+}
+
+.time-card {
+  padding: 22px 6px;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.time-card span {
+  display: block;
+  font-family: "Cormorant Garamond", serif;
+  color: var(--gold);
+  font-size: clamp(32px, 7vw, 48px);
+}
+
+.time-card small {
+  display: block;
+  color: var(--muted);
+  font-size: 9px;
+  letter-spacing: 2px;
+  margin-top: 7px;
+}
+
+.birthday-date {
+  color: var(--gold);
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin: 25px 0;
+}
+
+.gold-button {
+  display: inline-block;
+  padding: 15px 24px;
+  background: var(--gold);
+  color: #241725;
+  border: 1px solid var(--gold);
+  border-radius: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.gold-button:hover {
+  background: transparent;
+  color: var(--gold);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.section {
+  padding: 80px 20px;
+  border-top: 1px solid rgba(231, 197, 139, 0.12);
+}
+
+.section-title {
+  font-size: clamp(40px, 7vw, 64px);
+  line-height: 1;
+  margin: 16px 0;
+}
+
+.section-description {
+  max-width: 560px;
+  margin: 0 auto 32px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.lock-card,
+.letter {
+  width: min(100%, 700px);
+  margin: 35px auto;
+  border: 1px solid var(--border);
+  background: linear-gradient(145deg, #2b1c2c, #1c121e);
+  padding: clamp(25px, 6vw, 55px);
+}
+
+.lock-icon {
+  color: var(--gold);
+  font-size: 40px;
+}
+
+.lock-card h3 {
+  color: var(--gold);
+  font-size: 35px;
+  margin: 15px 0;
+}
+
+.lock-card p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 2;
+}
+
+.lock-date {
+  display: block;
+  margin-top: 25px;
+  font-size: 9px;
+  color: var(--gold);
+  letter-spacing: 2px;
+}
+
+.letter {
+  text-align: left;
+  color: #e8dce4;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 21px;
+  line-height: 1.9;
+}
+
+.letter h3 {
+  font-size: 37px;
+  color: var(--gold);
+}
+
+.letter-small {
+  font-family: "DM Sans", sans-serif;
+  color: var(--gold);
+  font-size: 9px;
+  letter-spacing: 3px;
+}
+
+.signature {
+  color: var(--gold);
+  font-size: 29px;
+}
+
+.photo-grid {
+  width: min(100%, 700px);
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.photo-card {
+  margin: 0;
+  background: var(--panel);
+  padding: 9px;
+  border: 1px solid var(--border);
+}
+
+.photo-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  background: #352339;
+}
+
+.photo-card figcaption {
+  color: var(--gold);
+  padding: 14px 4px 8px;
+  font-size: 22px;
+}
+
+.wishes-heading {
+  margin-top: 65px;
+}
+
+.wishes-grid {
+  width: min(100%, 800px);
+  margin: 25px auto 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+  text-align: left;
+}
+
+.wish-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  padding: 20px;
+  overflow-wrap: anywhere;
+}
+
+.wish-card p {
+  color: #eadfe8;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 21px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.wish-card strong {
+  color: var(--gold);
+  font-size: 12px;
+}
+
+.wish-form {
+  width: min(100%, 570px);
+  margin: 35px auto 0;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 12px;
+}
+
+.wish-form label {
+  color: var(--gold);
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-top: 8px;
+}
+
+.wish-form input,
+.wish-form textarea {
+  width: 100%;
+  padding: 15px;
+  background: #211521;
+  color: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  outline: none;
+  font: inherit;
+  font-size: 13px;
+}
+
+.wish-form input:focus,
+.wish-form textarea:focus {
+  border-color: var(--gold);
+}
+
+.wish-form textarea {
+  min-height: 135px;
+  resize: vertical;
+}
+
+.wish-form .gold-button {
+  margin-top: 10px;
+}
+
+.status {
+  min-height: 20px;
+  color: var(--gold);
+  font-size: 12px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+footer {
+  border-top: 1px solid var(--border);
+  padding: 35px 15px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.footer-star {
+  color: var(--gold);
+  font-size: 24px;
+}
+
+.footer-small {
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.happy-title {
+  color: var(--gold);
+  font-size: clamp(38px, 8vw, 62px);
+}
+
+@media (max-width: 560px) {
+  .countdown {
+    gap: 6px;
+  }
+
+  .time-card {
+    padding: 16px 2px;
+  }
+
+  .time-card small {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+
+  .section {
+    padding: 60px 16px;
+  }
+
+  .photo-grid {
+    gap: 9px;
+  }
+
+  .photo-card {
+    padding: 5px;
+  }
+
+  .photo-card figcaption {
+    font-size: 17px;
+  }
+
+  .wishes-grid {
+    grid-template-columns: 1fr;
+  }
+}

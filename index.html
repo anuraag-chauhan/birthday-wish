@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#170e19">
+  <title>For Ranjana | A Special Birthday</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="hero">
+    <p class="top-label">A LITTLE WORLD MADE FOR YOU</p>
+
+    <div class="sparkle">✦</div>
+    <p class="eyebrow">Someone beautiful was born on</p>
+    <h1>Ranjana<span>.</span></h1>
+
+    <p class="subtitle">
+      Some people make ordinary moments feel magical.
+      This little corner of the world belongs to you.
+    </p>
+
+    <div id="countdownArea">
+      <p class="eyebrow">YOUR SPECIAL DAY BEGINS IN</p>
+
+      <div class="countdown">
+        <div class="time-card">
+          <span id="days">--</span>
+          <small>DAYS</small>
+        </div>
+        <div class="time-card">
+          <span id="hours">--</span>
+          <small>HOURS</small>
+        </div>
+        <div class="time-card">
+          <span id="minutes">--</span>
+          <small>MINUTES</small>
+        </div>
+        <div class="time-card">
+          <span id="seconds">--</span>
+          <small>SECONDS</small>
+        </div>
+      </div>
+    </div>
+
+    <div id="birthdayMessage" class="hidden">
+      <h2 class="happy-title">Happy Birthday, Ranjana!</h2>
+      <p>Today, the world celebrates someone truly special. ♡</p>
+    </div>
+
+    <p class="birthday-date">04 JANUARY · FOREVER SPECIAL</p>
+    <a class="gold-button" href="#surprise">EXPLORE YOUR SURPRISE ↓</a>
+  </header>
+
+  <main>
+    <section id="surprise" class="section">
+      <p class="section-label">A LETTER FROM THE HEART</p>
+      <h2 class="section-title">Something for you</h2>
+      <p class="section-description">
+        A few words, a few memories, and a day made just for you.
+      </p>
+
+      <div id="lockedContent" class="lock-card">
+        <div class="lock-icon">♡</div>
+        <h3>Your surprise is waiting</h3>
+        <p>
+          Some things are worth waiting for.<br>
+          Come back on 4 January to open your birthday surprise.
+        </p>
+        <span class="lock-date">UNTIL THEN, KEEP SMILING ✦</span>
+      </div>
+
+      <div id="unlockedContent" class="hidden">
+        <article class="letter">
+          <p class="letter-small">TO SOMEONE VERY SPECIAL</p>
+          <h3>Dear Ranjana,</h3>
+
+          <p>
+            Happy Birthday to a person who deserves all the beautiful
+            things this world has to offer.
+          </p>
+
+          <p>
+            May your days be filled with genuine smiles, your heart with
+            peace, and your life with memories that you will cherish forever.
+            I hope every little dream you carry finds its way into reality.
+          </p>
+
+          <p>
+            Never forget how precious you are. May this new chapter bring
+            you unexpected happiness, endless reasons to laugh, and a love
+            that makes life feel a little more magical.
+          </p>
+
+          <p>Today is your day. Make it unforgettable. ♡</p>
+          <p class="signature">With love, always.</p>
+        </article>
+
+        <div class="photo-grid">
+          <figure class="photo-card">
+            <img src="assets/IMG-20260417-WA0014.jpg.jpeg"
+                 alt="Ranjana's special memory">
+            <figcaption>A beautiful soul</figcaption>
+          </figure>
+
+          <figure class="photo-card">
+            <img src="assets/IMG-20230622-WA0005.jpg.jpeg"
+                 alt="Another beautiful memory of Ranjana">
+            <figcaption>A precious memory</figcaption>
+          </figure>
+        </div>
+
+        <div class="wishes-heading">
+          <p class="section-label">ALL THE LOVE, IN ONE PLACE</p>
+          <h2 class="section-title">Birthday wishes</h2>
+          <p class="section-description">
+            Little messages from people who are happy you're in their world.
+          </p>
+        </div>
+
+        <div id="wishesList" class="wishes-grid"></div>
+        <p id="birthdayWishesStatus" class="status"></p>
+      </div>
+    </section>
+
+    <section id="writeWish" class="section wish-section">
+      <p class="section-label">BE PART OF HER STORY</p>
+      <h2 class="section-title">Leave a little love</h2>
+      <p class="section-description">
+        Write something beautiful for Ranjana.
+        Your wish will be saved for her birthday.
+      </p>
+
+      <form id="wishForm" class="wish-form">
+        <label for="senderName">YOUR NAME</label>
+        <input id="senderName" name="name" type="text"
+               maxlength="50" placeholder="Who is sending this wish?"
+               required>
+
+        <label for="wishMessage">YOUR MESSAGE</label>
+        <textarea id="wishMessage" name="message" maxlength="500"
+                  placeholder="Write your birthday wish here..."
+                  required></textarea>
+
+        <button id="submitWish" class="gold-button" type="submit">
+          SEND YOUR WISH ♡
+        </button>
+
+        <p id="formStatus" class="status" aria-live="polite">
+          Made with love, meant for her.
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-star">✦</div>
+    <p>Created with love for Ranjana.</p>
+    <p class="footer-small">ONE SPECIAL DAY · A THOUSAND BEAUTIFUL MEMORIES</p>
+  </footer>
+
+</body>
+</html>
